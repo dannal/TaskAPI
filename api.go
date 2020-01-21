@@ -56,7 +56,7 @@ func SetupRouter() *gin.Engine {
 func main() {
 	// DialInfo holds options for establishing a session with a MongoDB cluster.
 	dialInfo := &mgo.DialInfo{
-		Addrs:    []string{fmt.Sprintf("%s.documents.azure.com:10255", host)},
+		Addrs:    []string{fmt.Sprintf("%s.mongo.cosmos.azure.com:10255", host)},
 		Timeout:  60 * time.Second,
 		Database: database,
 		Username: username,
